@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import HeroStoryboard from '../components/home/HeroStoryboard'
+import HeroSection from '../components/home/HeroSection'
 import ScrollVideoSection from '../components/home/ScrollVideoSection'
 import EnergyOverview from '../components/home/EnergyOverview'
 import TrustMetrics from '../components/home/TrustMetrics'
@@ -7,7 +7,7 @@ import TrustMetrics from '../components/home/TrustMetrics'
 export default function HomePage() {
   return (
     <div className="flex flex-col w-full bg-[#F7F7F2]">
-      <HeroStoryboard />
+      <HeroSection />
 
       <ScrollVideoSection />
 
@@ -35,7 +35,7 @@ export default function HomePage() {
           <div className="relative z-10 flex flex-wrap items-center justify-center gap-3 pt-2">
             <Link
               to="/solutions"
-              className="h-12 px-6 rounded-2xl bg-[#006d3e] text-white font-label-ui text-sm font-semibold flex items-center gap-2 hover:bg-[#123c2d] transition-all shadow-sm"
+              className="h-12 px-6 rounded-2xl bg-[#006d3e] text-white font-label-ui text-sm font-semibold flex items-center gap-2 hover:bg-[#123c2d] transition-all"
             >
               <span>Explore Solutions</span>
               <span className="material-symbols-outlined text-[18px]">
