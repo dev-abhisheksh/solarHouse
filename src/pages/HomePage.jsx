@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import HeroStoryboard from '../components/home/HeroStoryboard'
+import ScrollVideoSection from '../components/home/ScrollVideoSection'
 import EnergyOverview from '../components/home/EnergyOverview'
 import TrustMetrics from '../components/home/TrustMetrics'
 import SolutionCard from '../components/solutions/SolutionCard'
@@ -21,6 +22,8 @@ export default function HomePage() {
   return (
     <div className="flex flex-col w-full">
       <HeroStoryboard />
+
+      <ScrollVideoSection />
 
       <EnergyOverview />
 
