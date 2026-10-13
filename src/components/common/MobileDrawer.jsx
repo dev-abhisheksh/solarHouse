@@ -26,7 +26,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
           <div className="flex items-center gap-2">
             <img
               src={brandDetails.logoUrl}
-              alt="SuryaVeda Brand Logo"
+              alt="Solar House Rooftop Solutions Logo"
               className="h-7 w-auto object-contain"
             />
             <span className="font-headline-sm text-lg text-[#002519] font-bold">

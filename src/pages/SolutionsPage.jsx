@@ -11,7 +11,7 @@ export default function SolutionsPage() {
         badge="SOLAR SOLUTIONS"
         title="Engineered For Residential,"
         highlight="Commercial & Industrial."
-        description="From bespoke home rooftop arrays to heavy multi-megawatt industrial solar sheds, explore SuryaVeda systems tailored to Indian power infrastructures."
+        description="From bespoke home rooftop arrays to heavy multi-megawatt industrial solar sheds, explore Solar House systems tailored to Indian power infrastructures."
       />
 
       <section className="w-full px-5 sm:px-8 py-16 sm:py-20 bg-[#F7F7F2]">
@@ -85,7 +85,7 @@ export default function SolutionsPage() {
                 IoT Telemetry
               </h3>
               <p className="font-body-sm text-xs text-[#e2eae4] leading-relaxed">
-                SuryaVeda mobile app provides live power flow graphics, historical DISCOM savings tallies, and automated fault alerts.
+                Solar House mobile app provides live power flow graphics, historical DISCOM savings tallies, and automated fault alerts.
               </p>
             </div>
           </div>

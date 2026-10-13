@@ -17,7 +17,7 @@ export const solutionsData = [
       'Eligible for PM Surya Ghar Muft Bijli Yojana subsidies up to ₹78,000',
       'Concealed conduit raceways with architectural finish',
       'Bifacial N-Type TOPCon panels with up to 22.5% module efficiency',
-      'SuryaVeda mobile app with live generation analytics'
+      'Solar House mobile app with live generation analytics'
     ],
     idealFor: 'Independent villas, duplexes, bungalows, and premium gated communities',
     paybackPeriod: '3 to 4 Years',

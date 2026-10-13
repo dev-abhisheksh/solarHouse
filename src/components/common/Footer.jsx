@@ -92,7 +92,7 @@ export default function Footer() {
 
         <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#a4d0bb]">
           <p>
-            © 2025 SuryaVeda Clean Energy Technologies Pvt. Ltd. Certified MNRE Channel Partner. All equipment backed by 25-year performance warranties.
+            © 2025 Solar House Rooftop Solutions Pvt. Ltd. Certified MNRE Channel Partner. All equipment backed by 25-year performance warranties.
           </p>
           <div className="flex items-center gap-4 text-xs">
             <Link to="/faqs" className="hover:text-white transition-colors">Privacy Policy</Link>

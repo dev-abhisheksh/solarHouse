@@ -32,7 +32,7 @@ export const faqData = [
     category: 'maintenance',
     categoryLabel: 'Maintenance & Warranty',
     question: 'What maintenance do solar panels require?',
-    answer: 'Photovoltaic panels have no moving parts. Periodic wiping with clean water every 15-20 days to remove dust and pollution is typically sufficient. SuryaVeda also provides optional automated water-sprinkler cleaning systems and bi-annual structural health inspections.'
+    answer: 'Photovoltaic panels have no moving parts. Periodic wiping with clean water every 15-20 days to remove dust and pollution is typically sufficient. Solar House Rooftop Solutions also provides optional automated water-sprinkler cleaning systems and bi-annual structural health inspections.'
   },
   {
     id: 6,
@@ -53,6 +53,6 @@ export const faqData = [
     category: 'pricing',
     categoryLabel: 'Costs & Subsidies',
     question: 'How do I claim the PM Surya Ghar subsidy?',
-    answer: 'SuryaVeda is an officially registered MNRE channel partner. Our team handles the entire documentation, national portal registration, DISCOM feasibility approval, and commissioning inspection, ensuring your direct bank transfer subsidy arrives without hassle.'
+    answer: 'Solar House Rooftop Solutions is an officially registered MNRE channel partner. Our team handles the entire documentation, national portal registration, DISCOM feasibility approval, and commissioning inspection, ensuring your direct bank transfer subsidy arrives without hassle.'
   }
 ]

@@ -9,10 +9,10 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col w-full">
       <PageHeader
-        badge="ABOUT SURYAVEDA"
+        badge="ABOUT SOLAR HOUSE"
         title="Architectural Solar Energy."
         highlight="Rooted in Abundance."
-        description="SuryaVeda was founded to unite timeless solar reverence with German-standard electrical engineering and modernist architecture for residences and enterprises across India."
+        description="Solar House Rooftop Solutions was founded to unite clean solar energy with German-standard electrical engineering and modernist architecture for residences and enterprises across India."
       />
 
       <section className="w-full px-5 sm:px-8 py-16 sm:py-20 bg-[#F7F7F2]">
@@ -26,7 +26,7 @@ export default function AboutPage() {
 
             <div className="flex flex-col gap-4 text-sm font-body-md text-[#737A75] leading-relaxed">
               <p>
-                Traditional rooftop solar often forces homeowners and facility managers to accept unsightly industrial framing, chaotic cable runs, and cluttered terraces. SuryaVeda was created to challenge that convention.
+                Traditional rooftop solar often forces homeowners and facility managers to accept unsightly industrial framing, chaotic cable runs, and cluttered terraces. Solar House Rooftop Solutions was created to challenge that convention.
               </p>
               <p>
                 Every installation is treated as an architectural commission. From flush black-frame integrations to elevated habitable terrace pergolas, our designs preserve lifestyle spaces, rooftop gardens, and corporate identities without structural compromise.
@@ -48,7 +48,7 @@ export default function AboutPage() {
           <div className="lg:col-span-6 rounded-2xl overflow-hidden shadow-xl border border-[#E2E5DF] bg-white">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGGcltfOOUzNPjQZ1NKLKtfA6NdRNDJfXlXV8XS0fx2jt_VHIc-pJ8zKAuDSXxXFL7DxgTSquQuhBFjkvuUz-QvgSS9gjhN2eYLbtX8FBC6Pihwki1M6EJx2ZQFrjNC1vIz00q9ATorK_hlg9pYvQ6xUWkEak0O4I8AeZVAtKvedW3JDmTB9k8BChahQu1mLCX_SW0fA7mkIjzSL9T6-3rASqRZKDG9NDMJp_SMEbIDQqHW4ELGeYb"
-              alt="SuryaVeda architectural rooftop integration"
+              alt="Solar House Rooftop Solutions architectural rooftop integration"
               className="w-full h-80 sm:h-96 object-cover"
             />
             <div className="p-6 bg-[#002519] text-white">
@@ -67,7 +67,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badge="ENGINEERING INTEGRITY"
-            title="The Pillars of SuryaVeda Reliability."
+            title="The Pillars of Solar House Reliability."
             description="Our four foundational commitments to quality, safety, and transparent execution."
             alignment="center"
           />
@@ -99,7 +99,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badge="VALUE PROPOSITION"
-            title="Why Modern India Chooses SuryaVeda."
+            title="Why Modern India Chooses Solar House."
             description="Proven advantages delivering sustained fiscal and ecological returns."
             alignment="center"
           />
@@ -140,7 +140,7 @@ export default function AboutPage() {
             JOIN THE SOLAR MOVEMENT
           </span>
           <h2 className="font-headline-lg text-3xl sm:text-4xl text-[#002519] font-bold">
-            Ready to Partner With SuryaVeda?
+            Ready to Partner With Solar House?
           </h2>
           <p className="font-body-md text-base text-[#737A75]">
             Our engineering team is ready to inspect your terrace, calculate solar azimuth models, and provide a tailored proposal.

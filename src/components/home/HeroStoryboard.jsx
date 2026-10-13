@@ -29,7 +29,7 @@ export default function HeroStoryboard() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGGcltfOOUzNPjQZ1NKLKtfA6NdRNDJfXlXV8XS0fx2jt_VHIc-pJ8zKAuDSXxXFL7DxgTSquQuhBFjkvuUz-QvgSS9gjhN2eYLbtX8FBC6Pihwki1M6EJx2ZQFrjNC1vIz00q9ATorK_hlg9pYvQ6xUWkEak0O4I8AeZVAtKvedW3JDmTB9k8BChahQu1mLCX_SW0fA7mkIjzSL9T6-3rASqRZKDG9NDMJp_SMEbIDQqHW4ELGeYb"
-            alt="SuryaVeda modern luxury villa with integrated rooftop solar array"
+            alt="Solar House Rooftop Solutions luxury villa with integrated rooftop solar array"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-luminosity scale-105 transition-transform duration-1000 ease-out"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#123c2d] via-[#123c2d]/70 to-transparent" />
@@ -45,7 +45,7 @@ export default function HeroStoryboard() {
           </div>
           <div className="text-right">
             <span className="font-label-caps text-xs text-[#ffdf97] font-bold tracking-widest uppercase">
-              Solar Vedic System
+              Solar House System
             </span>
           </div>
         </div>

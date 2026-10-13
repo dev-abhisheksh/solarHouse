@@ -16,7 +16,7 @@ export const processSteps = [
     stepNumber: '02',
     title: 'Get a Physical Site Assessment',
     subtitle: 'Structural & Shadow Survey',
-    description: 'A certified SuryaVeda structural engineer evaluates your terrace load strength, parapet shading, and optimal cable transit points.',
+    description: 'A certified Solar House structural engineer evaluates your terrace load strength, parapet shading, and optimal cable transit points.',
     timeline: 'Within 24 - 48 Hours',
     details: [
       'Terrace structural load capacity verification',
@@ -42,7 +42,7 @@ export const processSteps = [
     stepNumber: '04',
     title: 'Installation and Handover',
     subtitle: 'Turnkey Commissioning & App Sync',
-    description: 'Clean 3-day on-site execution, DISCOM bi-directional meter synchronization, and SuryaVeda performance app handover.',
+    description: 'Clean 3-day on-site execution, DISCOM bi-directional meter synchronization, and Solar House performance app handover.',
     timeline: '3 to 5 Days On-Site',
     details: [
       'Hot-dip galvanized structural mounting installation',
@@ -72,6 +72,6 @@ export const engineeringStandards = [
   {
     icon: 'search_off',
     title: '25-Year Lifecycle Support',
-    description: 'SuryaVeda smartphone generation app, swift DISCOM net-meter synchronization, and biannual preventative health maintenance.'
+    description: 'Solar House smartphone generation app, swift DISCOM net-meter synchronization, and biannual preventative health maintenance.'
   }
 ]

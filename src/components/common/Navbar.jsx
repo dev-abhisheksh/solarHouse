@@ -31,7 +31,7 @@ export default function Navbar({ onOpenMenu }) {
         <Link to="/" className="flex items-center gap-2.5 min-w-0">
           <img
             src={brandDetails.logoUrl}
-            alt="SuryaVeda Brand Logo"
+            alt="Solar House Rooftop Solutions Logo"
             className="h-8 w-auto object-contain shrink-0"
           />
           <div className="flex flex-col min-w-0">
