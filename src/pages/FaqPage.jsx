@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/common/PageHeader'
-import SectionHeading from '../components/common/SectionHeading'
 import FaqAccordion from '../components/faq/FaqAccordion'
 import { faqData } from '../data/faqData'
 import { brandDetails } from '../data/navigationData'
@@ -49,7 +48,7 @@ export default function FaqPage() {
                 placeholder="Search questions (e.g. net-metering, subsidy, cost)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full h-12 pl-11 pr-4 rounded-xl bg-white border border-[#E2E5DF] text-sm text-[#202824] placeholder-[#737A75]/60 focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm"
+                className="w-full h-12 pl-11 pr-4 rounded-2xl bg-[#edf6ef] text-sm text-[#202824] placeholder-[#737A75]/70 focus:outline-none focus:bg-[#e2eae4] transition-colors"
               />
             </div>
 
@@ -59,10 +58,10 @@ export default function FaqPage() {
                   key={cat.id}
                   type="button"
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`px-3 py-2 rounded-xl font-label-ui text-xs font-semibold transition-all ${
+                  className={`px-3.5 py-2 rounded-xl font-label-ui text-xs font-semibold transition-all ${
                     selectedCategory === cat.id
-                      ? 'bg-[#002519] text-white shadow-sm'
-                      : 'bg-white text-[#202824] border border-[#E2E5DF] hover:bg-[#edf6ef]'
+                      ? 'bg-[#006d3e] text-white'
+                      : 'bg-[#edf6ef] text-[#202824] hover:bg-[#e2eae4]'
                   }`}
                 >
                   {cat.label}
@@ -74,7 +73,7 @@ export default function FaqPage() {
           {filteredFaqs.length > 0 ? (
             <FaqAccordion faqs={filteredFaqs} />
           ) : (
-            <div className="p-8 text-center bg-white rounded-2xl border border-[#E2E5DF]">
+            <div className="p-8 text-center bg-[#edf6ef] rounded-3xl">
               <p className="font-headline-sm text-lg text-[#002519] font-bold">
                 No matching questions found
               </p>
@@ -84,7 +83,7 @@ export default function FaqPage() {
             </div>
           )}
 
-          <div className="mt-8 rounded-2xl p-8 bg-white border border-[#E2E5DF] shadow-md flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="mt-8 rounded-3xl p-8 bg-[#edf6ef] flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex flex-col gap-1 text-center sm:text-left">
               <h3 className="font-headline-sm text-xl text-[#002519] font-bold">
                 Have a specific question not covered here?
@@ -96,14 +95,14 @@ export default function FaqPage() {
             <div className="flex items-center gap-3 shrink-0">
               <a
                 href={`tel:${brandDetails.phone}`}
-                className="h-11 px-5 rounded-xl border border-[#006d3e] text-[#006d3e] font-label-ui text-xs font-bold flex items-center gap-1.5 hover:bg-[#edf6ef] transition-colors"
+                className="h-11 px-5 rounded-xl bg-[#e2eae4] text-[#006d3e] font-label-ui text-xs font-bold flex items-center gap-1.5 hover:bg-[#dce5de] transition-colors"
               >
                 <span className="material-symbols-outlined text-[16px]">call</span>
                 <span>Call Us</span>
               </a>
               <Link
                 to="/contact"
-                className="h-11 px-5 rounded-xl bg-[#006d3e] text-white font-label-ui text-xs font-bold flex items-center gap-1.5 hover:bg-[#123c2d] transition-colors shadow-sm"
+                className="h-11 px-5 rounded-xl bg-[#006d3e] text-white font-label-ui text-xs font-bold flex items-center gap-1.5 hover:bg-[#123c2d] transition-colors"
               >
                 <span>Ask Engineer</span>
               </Link>

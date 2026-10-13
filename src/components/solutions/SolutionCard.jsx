@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 
 export default function SolutionCard({ solution, isDetailed = false }) {
   return (
-    <div className="rounded-2xl overflow-hidden bg-white shadow-md border border-[#E2E5DF] flex flex-col hover:shadow-lg transition-shadow">
+    <div className="rounded-3xl overflow-hidden bg-[#edf6ef] flex flex-col justify-between">
       <div className="relative w-full h-56 sm:h-64">
         <img
           src={solution.image}
           alt={solution.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#002519]/80 backdrop-blur-md text-white font-label-caps text-xs uppercase font-bold tracking-wider">
+        <div className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#006d3e] text-white font-label-caps text-xs uppercase font-bold tracking-wider shadow-sm">
           {solution.badge}
         </div>
       </div>
@@ -20,12 +20,12 @@ export default function SolutionCard({ solution, isDetailed = false }) {
             <h3 className="font-headline-sm text-xl sm:text-2xl text-[#002519] font-bold">
               {solution.title}
             </h3>
-            <span className="font-label-ui text-xs font-semibold text-[#006d3e] bg-[#edf6ef] px-2.5 py-1 rounded-md">
+            <span className="font-label-ui text-xs font-semibold text-[#00522d] bg-[#87f6b0] px-2.5 py-1 rounded-full">
               {solution.capacity}
             </span>
           </div>
 
-          <p className="font-body-sm text-sm text-[#737A75]">
+          <p className="font-body-sm text-sm text-[#414844]">
             {solution.description}
           </p>
 
@@ -33,7 +33,7 @@ export default function SolutionCard({ solution, isDetailed = false }) {
             {solution.tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-2.5 py-1 rounded-md bg-[#e7f0e9] font-label-ui text-xs text-[#002519] font-medium"
+                className="px-3 py-1 rounded-xl bg-[#e2eae4] font-label-ui text-xs text-[#002519] font-medium"
               >
                 {tag}
               </span>
@@ -41,7 +41,7 @@ export default function SolutionCard({ solution, isDetailed = false }) {
           </div>
 
           {isDetailed && solution.features && (
-            <div className="pt-3 border-t border-[#E2E5DF] flex flex-col gap-2">
+            <div className="pt-3 flex flex-col gap-2">
               <span className="font-label-caps text-xs text-[#006d3e] uppercase font-bold">
                 Key Technical Highlights
               </span>
@@ -56,7 +56,7 @@ export default function SolutionCard({ solution, isDetailed = false }) {
                 ))}
               </ul>
 
-              <div className="mt-3 grid grid-cols-2 gap-2 p-3 bg-[#edf6ef] rounded-xl text-xs">
+              <div className="mt-3 grid grid-cols-2 gap-2 p-3.5 bg-[#e2eae4] rounded-2xl text-xs">
                 <div>
                   <span className="text-[#737A75] block font-medium">Estimated Payback:</span>
                   <span className="text-[#002519] font-bold">{solution.paybackPeriod}</span>
@@ -72,7 +72,7 @@ export default function SolutionCard({ solution, isDetailed = false }) {
 
         <Link
           to={`/contact?solution=${solution.id}`}
-          className="mt-2 h-11 w-full bg-[#006d3e] text-white rounded-xl font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#123c2d] transition-colors shadow-sm font-semibold"
+          className="mt-2 h-11 w-full bg-[#006d3e] text-white rounded-2xl font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#123c2d] transition-colors shadow-sm font-semibold"
         >
           <span>Explore {solution.title}</span>
           <span className="material-symbols-outlined text-[16px]">

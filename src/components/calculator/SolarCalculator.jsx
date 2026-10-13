@@ -17,15 +17,15 @@ export default function SolarCalculator({ initialSector = 'residential', initial
   const areaRequired = Math.round(recommendedKw * 85)
 
   return (
-    <div className="w-full max-w-2xl mx-auto rounded-2xl bg-white shadow-xl border border-[#E2E5DF] p-5 sm:p-8 flex flex-col gap-6">
-      <div className="flex bg-[#e7f0e9] p-1.5 rounded-xl">
+    <div className="w-full max-w-2xl mx-auto rounded-3xl bg-[#edf6ef] p-6 sm:p-10 flex flex-col gap-6 text-[#202824]">
+      <div className="flex bg-[#e2eae4] p-1.5 rounded-2xl">
         <button
           type="button"
           onClick={() => setSector('residential')}
-          className={`flex-1 py-2.5 rounded-lg font-label-ui text-sm font-semibold transition-all ${
+          className={`flex-1 py-2.5 rounded-xl font-label-ui text-sm font-semibold transition-all ${
             sector === 'residential'
-              ? 'bg-[#002519] text-white shadow-sm'
-              : 'text-[#202824] hover:bg-[#e2eae4]'
+              ? 'bg-[#006d3e] text-white shadow-sm'
+              : 'text-[#202824] hover:bg-[#dce5de]'
           }`}
         >
           Residential
@@ -33,10 +33,10 @@ export default function SolarCalculator({ initialSector = 'residential', initial
         <button
           type="button"
           onClick={() => setSector('commercial')}
-          className={`flex-1 py-2.5 rounded-lg font-label-ui text-sm font-semibold transition-all ${
+          className={`flex-1 py-2.5 rounded-xl font-label-ui text-sm font-semibold transition-all ${
             sector === 'commercial'
-              ? 'bg-[#002519] text-white shadow-sm'
-              : 'text-[#202824] hover:bg-[#e2eae4]'
+              ? 'bg-[#006d3e] text-white shadow-sm'
+              : 'text-[#202824] hover:bg-[#dce5de]'
           }`}
         >
           Commercial
@@ -45,7 +45,7 @@ export default function SolarCalculator({ initialSector = 'residential', initial
 
       <div className="flex flex-col gap-3">
         <div className="flex items-center justify-between">
-          <span className="font-label-ui text-sm text-[#737A75]">
+          <span className="font-label-ui text-sm text-[#414844]">
             Average Monthly Electricity Bill:
           </span>
           <span className="font-headline-sm text-2xl text-[#006d3e] font-bold">
@@ -71,7 +71,7 @@ export default function SolarCalculator({ initialSector = 'residential', initial
       </div>
 
       <div className="grid grid-cols-2 gap-3">
-        <div className="p-3.5 rounded-xl bg-[#edf6ef] flex flex-col">
+        <div className="p-4 rounded-2xl bg-[#e2eae4] flex flex-col">
           <span className="font-label-caps text-xs text-[#737A75] uppercase">
             Estimated Area
           </span>
@@ -79,7 +79,7 @@ export default function SolarCalculator({ initialSector = 'residential', initial
             ~{areaRequired} sq.ft
           </span>
         </div>
-        <div className="p-3.5 rounded-xl bg-[#edf6ef] flex flex-col">
+        <div className="p-4 rounded-2xl bg-[#e2eae4] flex flex-col">
           <span className="font-label-caps text-xs text-[#737A75] uppercase">
             Avg Monthly Units
           </span>
@@ -89,23 +89,21 @@ export default function SolarCalculator({ initialSector = 'residential', initial
         </div>
       </div>
 
-      <div className="rounded-xl bg-[#123c2d] text-white p-6 flex flex-col gap-5 relative overflow-hidden shadow-inner">
-        <div className="absolute -right-6 -bottom-6 w-36 h-36 bg-[#006d3e]/30 rounded-full blur-2xl pointer-events-none" />
-
-        <div className="flex items-center justify-between border-b border-white/10 pb-4">
+      <div className="rounded-3xl bg-[#e2eae4] p-6 sm:p-8 flex flex-col gap-5 text-[#002519]">
+        <div className="flex items-center justify-between pb-4">
           <div>
-            <span className="font-label-caps text-xs text-[#e2eae4] uppercase block">
+            <span className="font-label-caps text-xs text-[#414844] uppercase block">
               Suggested Capacity
             </span>
-            <span className="font-headline-md text-3xl font-bold text-[#8af9b3] mt-1 block">
+            <span className="font-headline-md text-3xl font-bold text-[#006d3e] mt-1 block">
               {recommendedKw} kWp
             </span>
           </div>
           <div className="text-right">
-            <span className="font-label-caps text-xs text-[#e2eae4] uppercase block">
+            <span className="font-label-caps text-xs text-[#414844] uppercase block">
               Estimated Investment
             </span>
-            <span className="font-label-ui text-lg font-bold text-[#ffdf97] mt-1 block">
+            <span className="font-label-ui text-lg font-bold text-[#002519] mt-1 block">
               ₹{systemCost.toLocaleString('en-IN')}
             </span>
           </div>
@@ -113,31 +111,31 @@ export default function SolarCalculator({ initialSector = 'residential', initial
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <span className="font-label-caps text-xs text-[#e2eae4] uppercase block">
+            <span className="font-label-caps text-xs text-[#414844] uppercase block">
               Monthly Savings
             </span>
-            <span className="font-headline-sm text-xl font-bold text-white mt-1 block">
+            <span className="font-headline-sm text-xl font-bold text-[#002519] mt-1 block">
               ₹{monthlySaving.toLocaleString('en-IN')}
             </span>
           </div>
           <div>
-            <span className="font-label-caps text-xs text-[#e2eae4] uppercase block">
+            <span className="font-label-caps text-xs text-[#414844] uppercase block">
               Annual Savings
             </span>
-            <span className="font-headline-sm text-xl font-bold text-[#8af9b3] mt-1 block">
+            <span className="font-headline-sm text-xl font-bold text-[#006d3e] mt-1 block">
               ₹{annualSaving.toLocaleString('en-IN')}
             </span>
           </div>
         </div>
 
-        <div className="p-3 rounded-lg bg-white/10 flex items-center justify-between text-sm">
-          <span className="text-[#e2eae4] flex items-center gap-1.5 font-medium">
-            <span className="material-symbols-outlined text-[18px] text-[#ffdf97]">
+        <div className="p-3.5 rounded-xl bg-[#edf6ef] flex items-center justify-between text-sm">
+          <span className="text-[#414844] flex items-center gap-1.5 font-medium">
+            <span className="material-symbols-outlined text-[18px] text-[#006d3e]">
               speed
             </span>
             Projected Full Payback:
           </span>
-          <span className="font-label-ui text-base text-[#ffdf97] font-bold">
+          <span className="font-label-ui text-base text-[#006d3e] font-bold">
             ~{paybackYears} Years
           </span>
         </div>
@@ -149,7 +147,7 @@ export default function SolarCalculator({ initialSector = 'residential', initial
 
       <Link
         to={`/contact?sector=${sector}&bill=${bill}&capacity=${recommendedKw}`}
-        className="h-12 w-full rounded-xl bg-[#006d3e] text-white font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#87f6b0] hover:text-[#007241] transition-all shadow-[0_4px_14px_rgba(54,169,107,0.35)] font-semibold active:scale-95"
+        className="h-12 w-full rounded-2xl bg-[#006d3e] text-white font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#123c2d] transition-all shadow-sm font-semibold active:scale-95"
       >
         <span>Claim Free Site Survey for This Estimate</span>
         <span className="material-symbols-outlined text-[18px]">

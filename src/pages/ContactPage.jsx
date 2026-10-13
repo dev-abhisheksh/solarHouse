@@ -78,7 +78,7 @@ export default function ContactPage() {
           </div>
 
           <div className="lg:col-span-5 flex flex-col gap-6">
-            <div className="p-6 rounded-2xl bg-white border border-[#E2E5DF] shadow-md flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-3xl bg-[#edf6ef] flex flex-col gap-4">
               <h3 className="font-headline-sm text-xl text-[#002519] font-bold">
                 Direct Contact & Support
               </h3>
@@ -86,7 +86,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-3 text-sm">
                 <a
                   href={`tel:${brandDetails.phone}`}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-[#edf6ef] text-[#002519] hover:bg-[#e2eae4] transition-colors"
+                  className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#f3fbf5] text-[#002519] hover:bg-[#e2eae4] transition-colors"
                 >
                   <span className="material-symbols-outlined text-[20px] text-[#006d3e]">
                     call
@@ -99,7 +99,7 @@ export default function ContactPage() {
 
                 <a
                   href={`mailto:${brandDetails.email}`}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-[#edf6ef] text-[#002519] hover:bg-[#e2eae4] transition-colors"
+                  className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#f3fbf5] text-[#002519] hover:bg-[#e2eae4] transition-colors"
                 >
                   <span className="material-symbols-outlined text-[20px] text-[#006d3e]">
                     mail
@@ -110,7 +110,7 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#edf6ef] text-[#002519]">
+                <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#f3fbf5] text-[#002519]">
                   <span className="material-symbols-outlined text-[20px] text-[#006d3e]">
                     schedule
                   </span>
@@ -122,14 +122,14 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#E2E5DF] shadow-md flex flex-col gap-4">
+            <div className="p-6 sm:p-8 rounded-3xl bg-[#edf6ef] flex flex-col gap-4">
               <h3 className="font-headline-sm text-lg text-[#002519] font-bold">
                 Metro Regional Presence
               </h3>
 
               <div className="flex flex-col gap-3">
                 {offices.map((office, idx) => (
-                  <div key={idx} className="flex flex-col pb-3 border-b border-[#E2E5DF] last:border-0 last:pb-0">
+                  <div key={idx} className="flex flex-col pb-3 last:pb-0">
                     <span className="font-label-ui text-sm font-bold text-[#006d3e]">
                       {office.city}
                     </span>

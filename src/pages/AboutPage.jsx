@@ -34,28 +34,28 @@ export default function AboutPage() {
             </div>
 
             <div className="flex items-center gap-4 pt-2">
-              <div className="p-4 rounded-xl bg-[#edf6ef] border border-[#E2E5DF]">
+              <div className="p-4 rounded-2xl bg-[#edf6ef]">
                 <span className="font-headline-sm text-2xl font-bold text-[#006d3e] block">100%</span>
                 <span className="font-label-ui text-xs text-[#202824] font-medium">In-House Engineering Team</span>
               </div>
-              <div className="p-4 rounded-xl bg-[#edf6ef] border border-[#E2E5DF]">
+              <div className="p-4 rounded-2xl bg-[#edf6ef]">
                 <span className="font-headline-sm text-2xl font-bold text-[#006d3e] block">MNRE</span>
                 <span className="font-label-ui text-xs text-[#202824] font-medium">Certified Channel Partner</span>
               </div>
             </div>
           </div>
 
-          <div className="lg:col-span-6 rounded-2xl overflow-hidden shadow-xl border border-[#E2E5DF] bg-white">
+          <div className="lg:col-span-6 rounded-3xl overflow-hidden bg-[#e2eae4]">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGGcltfOOUzNPjQZ1NKLKtfA6NdRNDJfXlXV8XS0fx2jt_VHIc-pJ8zKAuDSXxXFL7DxgTSquQuhBFjkvuUz-QvgSS9gjhN2eYLbtX8FBC6Pihwki1M6EJx2ZQFrjNC1vIz00q9ATorK_hlg9pYvQ6xUWkEak0O4I8AeZVAtKvedW3JDmTB9k8BChahQu1mLCX_SW0fA7mkIjzSL9T6-3rASqRZKDG9NDMJp_SMEbIDQqHW4ELGeYb"
               alt="Solar House Rooftop Solutions architectural rooftop integration"
               className="w-full h-80 sm:h-96 object-cover"
             />
-            <div className="p-6 bg-[#002519] text-white">
-              <span className="font-label-caps text-xs text-[#8af9b3] uppercase font-bold tracking-wider">
+            <div className="p-6 bg-[#edf6ef] text-[#002519]">
+              <span className="font-label-caps text-xs text-[#006d3e] uppercase font-bold tracking-wider">
                 Our Guarantee
               </span>
-              <p className="font-headline-sm text-lg text-white font-bold mt-1">
+              <p className="font-headline-sm text-lg text-[#002519] font-bold mt-1">
                 Zero architectural clutter, verified generation ratio SLAs, and 25-year performance warranty.
               </p>
             </div>
@@ -76,9 +76,9 @@ export default function AboutPage() {
             {engineeringStandards.map((item, index) => (
               <div
                 key={index}
-                className="p-6 rounded-2xl bg-white border border-[#E2E5DF] shadow-sm flex flex-col gap-3"
+                className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#edf6ef] text-[#006d3e] flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-[#e2eae4] text-[#006d3e] flex items-center justify-center">
                   <span className="material-symbols-outlined text-[26px]">
                     {item.icon}
                   </span>
@@ -108,10 +108,10 @@ export default function AboutPage() {
             {valueHighlights.map((item) => (
               <div
                 key={item.id}
-                className="p-6 rounded-2xl bg-white border border-[#E2E5DF] shadow-sm flex flex-col gap-3"
+                className="p-6 rounded-3xl bg-[#edf6ef] flex flex-col gap-3"
               >
                 <div className="flex items-center justify-between">
-                  <div className="w-11 h-11 rounded-xl bg-[#edf6ef] text-[#006d3e] flex items-center justify-center">
+                  <div className="w-11 h-11 rounded-xl bg-[#e2eae4] text-[#006d3e] flex items-center justify-center">
                     <span className="material-symbols-outlined text-[24px]">
                       {item.icon}
                     </span>
@@ -148,7 +148,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <Link
               to="/contact"
-              className="h-12 px-8 bg-[#006d3e] text-white rounded-xl font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#123c2d] transition-colors shadow-sm font-semibold"
+              className="h-12 px-8 bg-[#006d3e] text-white rounded-xl font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#123c2d] transition-colors font-semibold"
             >
               <span>Book Physical Site Survey</span>
               <span className="material-symbols-outlined text-[18px]">

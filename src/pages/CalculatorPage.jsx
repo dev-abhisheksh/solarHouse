@@ -41,8 +41,8 @@ export default function CalculatorPage() {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            <div className="p-6 rounded-2xl bg-white border border-[#E2E5DF] shadow-sm flex flex-col gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#edf6ef] text-[#006d3e] flex items-center justify-center font-bold">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <div className="w-10 h-10 rounded-xl bg-[#e2eae4] text-[#006d3e] flex items-center justify-center font-bold">
                 01
               </div>
               <h3 className="font-headline-sm text-lg text-[#002519] font-bold">
@@ -53,8 +53,8 @@ export default function CalculatorPage() {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#E2E5DF] shadow-sm flex flex-col gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#edf6ef] text-[#006d3e] flex items-center justify-center font-bold">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <div className="w-10 h-10 rounded-xl bg-[#e2eae4] text-[#006d3e] flex items-center justify-center font-bold">
                 02
               </div>
               <h3 className="font-headline-sm text-lg text-[#002519] font-bold">
@@ -65,8 +65,8 @@ export default function CalculatorPage() {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#E2E5DF] shadow-sm flex flex-col gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#edf6ef] text-[#006d3e] flex items-center justify-center font-bold">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <div className="w-10 h-10 rounded-xl bg-[#e2eae4] text-[#006d3e] flex items-center justify-center font-bold">
                 03
               </div>
               <h3 className="font-headline-sm text-lg text-[#002519] font-bold">

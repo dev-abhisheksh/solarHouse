@@ -15,12 +15,12 @@ export default function FaqAccordion({ faqs }) {
         return (
           <div
             key={faq.id}
-            className="rounded-2xl bg-white border border-[#E2E5DF] shadow-sm overflow-hidden transition-all"
+            className="rounded-2xl bg-[#edf6ef] overflow-hidden transition-all"
           >
             <button
               type="button"
               onClick={() => toggleFaq(faq.id)}
-              className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-label-ui text-sm sm:text-base text-[#002519] font-bold hover:bg-[#edf6ef]/50 transition-colors"
+              className="w-full p-5 text-left flex items-center justify-between gap-4 font-label-ui text-sm sm:text-base text-[#002519] font-bold hover:bg-[#e2eae4] transition-colors"
             >
               <span>{faq.question}</span>
               <span
@@ -33,7 +33,7 @@ export default function FaqAccordion({ faqs }) {
             </button>
 
             {isOpen && (
-              <div className="px-4 sm:px-5 pb-5 text-sm font-body-sm text-[#737A75] leading-relaxed border-t border-[#E2E5DF]/60 pt-3">
+              <div className="px-5 pb-5 text-sm font-body-sm text-[#414844] leading-relaxed pt-1">
                 {faq.answer}
               </div>
             )}

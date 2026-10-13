@@ -30,61 +30,60 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      <section className="w-full px-5 sm:px-8 py-16 sm:py-20 bg-[#002519] text-white">
+      <section className="w-full px-5 sm:px-8 py-16 sm:py-20 bg-[#e7f0e9]">
         <div className="max-w-7xl mx-auto flex flex-col gap-10">
           <SectionHeading
             badge="TECHNOLOGY SPECIFICATIONS"
             title="Tier-1 Equipment Built For The Indian Climate."
             description="We select components tested for high tropical heat, dust accumulation, and heavy monsoon humidity."
-            textColor="text-white"
             alignment="center"
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-[#123c2d] border border-white/10 flex flex-col gap-3">
-              <span className="material-symbols-outlined text-[32px] text-[#8af9b3]">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <span className="material-symbols-outlined text-[32px] text-[#006d3e]">
                 solar_power
               </span>
-              <h3 className="font-headline-sm text-lg font-bold text-white">
+              <h3 className="font-headline-sm text-lg font-bold text-[#002519]">
                 Bifacial N-Type TOPCon
               </h3>
-              <p className="font-body-sm text-xs text-[#e2eae4] leading-relaxed">
+              <p className="font-body-sm text-xs text-[#737A75] leading-relaxed">
                 Generates power from both top and rear reflected sunlight, yielding up to 25% higher output over conventional mono-PERC cells.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#123c2d] border border-white/10 flex flex-col gap-3">
-              <span className="material-symbols-outlined text-[32px] text-[#ffdf97]">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <span className="material-symbols-outlined text-[32px] text-[#006d3e]">
                 bolt
               </span>
-              <h3 className="font-headline-sm text-lg font-bold text-white">
+              <h3 className="font-headline-sm text-lg font-bold text-[#002519]">
                 Micro & Hybrid Inverters
               </h3>
-              <p className="font-body-sm text-xs text-[#e2eae4] leading-relaxed">
+              <p className="font-body-sm text-xs text-[#737A75] leading-relaxed">
                 Panel-level MPPT tracking avoids entire array loss from partial tree or chimney shading. Seamless battery storage synchronization.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#123c2d] border border-white/10 flex flex-col gap-3">
-              <span className="material-symbols-outlined text-[32px] text-[#8af9b3]">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <span className="material-symbols-outlined text-[32px] text-[#006d3e]">
                 foundation
               </span>
-              <h3 className="font-headline-sm text-lg font-bold text-white">
+              <h3 className="font-headline-sm text-lg font-bold text-[#002519]">
                 Galvanized Racking
               </h3>
-              <p className="font-body-sm text-xs text-[#e2eae4] leading-relaxed">
+              <p className="font-body-sm text-xs text-[#737A75] leading-relaxed">
                 Hot-dip galvanized structural steel certified to withstand 170 km/h wind gusts, with zero terrace puncture or seepage risks.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#123c2d] border border-white/10 flex flex-col gap-3">
-              <span className="material-symbols-outlined text-[32px] text-[#ffdf97]">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <span className="material-symbols-outlined text-[32px] text-[#006d3e]">
                 sensors
               </span>
-              <h3 className="font-headline-sm text-lg font-bold text-white">
+              <h3 className="font-headline-sm text-lg font-bold text-[#002519]">
                 IoT Telemetry
               </h3>
-              <p className="font-body-sm text-xs text-[#e2eae4] leading-relaxed">
+              <p className="font-body-sm text-xs text-[#737A75] leading-relaxed">
                 Solar House mobile app provides live power flow graphics, historical DISCOM savings tallies, and automated fault alerts.
               </p>
             </div>
@@ -102,7 +101,7 @@ export default function SolutionsPage() {
               Subsidies, Accelerated Depreciation & Tax Offsets.
             </h2>
             <div className="flex flex-col gap-4 text-sm text-[#737A75] leading-relaxed">
-              <div className="p-4 rounded-xl bg-white border border-[#E2E5DF]">
+              <div className="p-5 rounded-2xl bg-[#f3fbf5]">
                 <h4 className="font-label-ui text-base font-bold text-[#002519]">
                   PM Surya Ghar Muft Bijli Yojana (Residential)
                 </h4>
@@ -111,7 +110,7 @@ export default function SolutionsPage() {
                 </p>
               </div>
 
-              <div className="p-4 rounded-xl bg-white border border-[#E2E5DF]">
+              <div className="p-5 rounded-2xl bg-[#f3fbf5]">
                 <h4 className="font-label-ui text-base font-bold text-[#002519]">
                   40% Accelerated Depreciation (Commercial & Industrial)
                 </h4>
@@ -122,8 +121,8 @@ export default function SolutionsPage() {
             </div>
           </div>
 
-          <div className="rounded-2xl p-8 bg-white border border-[#E2E5DF] shadow-md flex flex-col items-center text-center gap-6">
-            <span className="w-14 h-14 rounded-full bg-[#edf6ef] text-[#006d3e] flex items-center justify-center">
+          <div className="rounded-3xl p-8 bg-[#e2eae4] flex flex-col items-center text-center gap-6">
+            <span className="w-14 h-14 rounded-2xl bg-[#edf6ef] text-[#006d3e] flex items-center justify-center">
               <span className="material-symbols-outlined text-[30px]">
                 calculate
               </span>
@@ -138,7 +137,7 @@ export default function SolutionsPage() {
             </div>
             <Link
               to="/calculator"
-              className="h-12 px-8 bg-[#006d3e] text-white rounded-xl font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#123c2d] transition-colors shadow-sm font-semibold"
+              className="h-12 px-8 bg-[#006d3e] text-white rounded-xl font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#123c2d] transition-colors font-semibold"
             >
               <span>Launch Solar Calculator</span>
               <span className="material-symbols-outlined text-[18px]">

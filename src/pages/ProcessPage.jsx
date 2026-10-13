@@ -27,49 +27,48 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <section className="w-full px-5 sm:px-8 py-16 sm:py-20 bg-[#002519] text-white">
+      <section className="w-full px-5 sm:px-8 py-16 sm:py-20 bg-[#e7f0e9]">
         <div className="max-w-7xl mx-auto flex flex-col gap-10">
           <SectionHeading
             badge="ON-SITE VERIFICATION"
             title="What Our Engineers Check During The Site Visit."
             description="We inspect every structural and electrical nuance before drafting your custom layout render."
-            textColor="text-white"
             alignment="center"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-[#123c2d] border border-white/10 flex flex-col gap-3">
-              <span className="material-symbols-outlined text-[32px] text-[#8af9b3]">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <span className="material-symbols-outlined text-[32px] text-[#006d3e]">
                 travel_explore
               </span>
-              <h3 className="font-headline-sm text-lg font-bold text-white">
+              <h3 className="font-headline-sm text-lg font-bold text-[#002519]">
                 Solar Azimuth & Shading
               </h3>
-              <p className="font-body-sm text-sm text-[#e2eae4] leading-relaxed">
+              <p className="font-body-sm text-sm text-[#737A75] leading-relaxed">
                 Using calibrated digital sun-path modeling tools, we measure seasonal tree, parapet, water tank, and adjacent building shadows across all 12 months.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#123c2d] border border-white/10 flex flex-col gap-3">
-              <span className="material-symbols-outlined text-[32px] text-[#ffdf97]">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <span className="material-symbols-outlined text-[32px] text-[#006d3e]">
                 construction
               </span>
-              <h3 className="font-headline-sm text-lg font-bold text-white">
+              <h3 className="font-headline-sm text-lg font-bold text-[#002519]">
                 Slab Load & Parapet Anchor
               </h3>
-              <p className="font-body-sm text-sm text-[#e2eae4] leading-relaxed">
+              <p className="font-body-sm text-sm text-[#737A75] leading-relaxed">
                 We inspect RCC slab thickness, waterproofing membranes, and wind shear vectors to ensure anchoring without any terrace leakage or vibration.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#123c2d] border border-white/10 flex flex-col gap-3">
-              <span className="material-symbols-outlined text-[32px] text-[#8af9b3]">
+            <div className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3">
+              <span className="material-symbols-outlined text-[32px] text-[#006d3e]">
                 electrical_services
               </span>
-              <h3 className="font-headline-sm text-lg font-bold text-white">
+              <h3 className="font-headline-sm text-lg font-bold text-[#002519]">
                 DISCOM Meter & Earthing Pit
               </h3>
-              <p className="font-body-sm text-sm text-[#e2eae4] leading-relaxed">
+              <p className="font-body-sm text-sm text-[#737A75] leading-relaxed">
                 We test the property main incoming distribution board, lightning arrestor path, and identify dedicated locations for chemical earthing pits.
               </p>
             </div>
@@ -89,9 +88,9 @@ export default function ProcessPage() {
             {engineeringStandards.map((item, index) => (
               <div
                 key={index}
-                className="p-6 rounded-2xl bg-white border border-[#E2E5DF] shadow-sm flex flex-col gap-3"
+                className="p-6 rounded-3xl bg-[#f3fbf5] flex flex-col gap-3"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#edf6ef] text-[#006d3e] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-[#e2eae4] text-[#006d3e] flex items-center justify-center">
                   <span className="material-symbols-outlined text-[24px]">
                     {item.icon}
                   </span>
@@ -109,7 +108,7 @@ export default function ProcessPage() {
           <div className="mt-12 text-center">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#006d3e] text-white rounded-xl font-label-ui text-sm font-semibold hover:bg-[#123c2d] transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#006d3e] text-white rounded-xl font-label-ui text-sm font-semibold hover:bg-[#123c2d] transition-colors"
             >
               <span>Schedule Free Property Survey</span>
               <span className="material-symbols-outlined text-[18px]">

@@ -1,6 +1,6 @@
 export default function ProjectCard({ project }) {
   return (
-    <div className="rounded-2xl overflow-hidden bg-white shadow-md border border-[#E2E5DF] flex flex-col hover:shadow-lg transition-shadow">
+    <div className="rounded-3xl overflow-hidden bg-[#edf6ef] flex flex-col justify-between">
       <div className="relative w-full h-56 sm:h-64">
         <img
           src={project.image}
@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
           className="w-full h-full object-cover"
         />
         {project.tag && (
-          <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-[#002519]/85 backdrop-blur-md text-white font-label-caps text-xs font-bold">
+          <div className="absolute bottom-3 left-3 px-3.5 py-1 rounded-full bg-[#006d3e] text-white font-label-caps text-xs font-bold shadow-sm">
             {project.tag}
           </div>
         )}
@@ -29,12 +29,12 @@ export default function ProjectCard({ project }) {
             {project.title}
           </h3>
 
-          <p className="font-body-sm text-sm text-[#737A75]">
+          <p className="font-body-sm text-sm text-[#414844]">
             {project.description}
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-2 mt-2 bg-[#edf6ef] p-3 rounded-xl text-center">
+        <div className="grid grid-cols-3 gap-2 mt-2 bg-[#e2eae4] p-3.5 rounded-2xl text-center">
           <div>
             <span className="font-label-caps text-[11px] text-[#737A75] block">
               System

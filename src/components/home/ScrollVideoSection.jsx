@@ -176,58 +176,58 @@ export default function ScrollVideoSection() {
   }
 
   return (
-    <section ref={containerRef} className="relative w-full h-[220vh] sm:h-[260vh] bg-[#002519]">
+    <section ref={containerRef} className="relative w-full h-[220vh] sm:h-[260vh] bg-[#edf6ef] text-[#202824]">
       <div className="sticky top-0 min-h-screen w-full overflow-hidden flex flex-col justify-center px-4 sm:px-6 lg:px-8 pt-16 pb-16 lg:py-0">
-        <div className="max-w-7xl mx-auto w-full flex flex-col gap-3 sm:gap-5">
+        <div className="max-w-7xl mx-auto w-full flex flex-col gap-4 sm:gap-6">
           <div className="flex items-center justify-between">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15">
-              <span className="w-2 h-2 rounded-full bg-[#8af9b3] animate-ping" />
-              <span className="font-label-caps text-xs text-[#8af9b3] uppercase tracking-wider font-bold">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#87f6b0]/60">
+              <span className="w-2 h-2 rounded-full bg-[#006d3e] animate-ping" />
+              <span className="font-label-caps text-xs text-[#00522d] uppercase tracking-wider font-bold">
                 Cinematic Solar Video
               </span>
             </div>
 
-            <span className="font-label-caps text-xs text-[#ffdf97] uppercase tracking-wider font-semibold">
+            <span className="font-label-caps text-xs text-[#006d3e] uppercase tracking-wider font-bold">
               Scroll To Scrub
             </span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
             <div className="lg:col-span-5 xl:col-span-4 order-2 lg:order-1 self-center">
-              <div className="w-full h-auto rounded-2xl bg-[#123c2d]/90 border border-white/15 shadow-xl p-5 sm:p-6 flex flex-col gap-4 backdrop-blur-md text-white transition-all duration-300 ease-in-out">
-                <div className="flex flex-col gap-2">
-                  <div className="inline-flex items-center gap-2 text-[#8af9b3] font-label-caps text-xs uppercase tracking-widest font-bold">
+              <div className="w-full flex flex-col gap-4 transition-all duration-300 ease-in-out">
+                <div className="flex flex-col gap-2.5">
+                  <div className="inline-flex items-center gap-2 text-[#006d3e] font-label-caps text-xs uppercase tracking-widest font-bold">
                     <span className="material-symbols-outlined text-[18px]">
                       solar_power
                     </span>
                     <span>{activeChapter.tag}</span>
                   </div>
 
-                  <h2 className="font-headline-lg text-xl sm:text-2xl text-white font-bold leading-tight tracking-tight">
+                  <h2 className="font-headline-lg text-2xl sm:text-3xl text-[#002519] font-bold leading-tight tracking-tight">
                     {activeChapter.title}
                   </h2>
 
-                  <p className="font-body-sm text-xs sm:text-sm text-[#e2eae4] leading-relaxed">
+                  <p className="font-body-sm text-sm text-[#414844] leading-relaxed">
                     {activeChapter.description}
                   </p>
 
-                  <div className="p-2.5 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2 mt-1">
-                    <span className="material-symbols-outlined text-[16px] text-[#ffdf97] shrink-0">
+                  <div className="p-3 rounded-2xl bg-[#e2eae4]/80 flex items-center gap-2.5 mt-1">
+                    <span className="material-symbols-outlined text-[18px] text-[#006d3e] shrink-0">
                       verified
                     </span>
-                    <span className="font-body-sm text-xs text-[#ffdf97] font-medium leading-tight">
+                    <span className="font-body-sm text-xs text-[#00522d] font-semibold leading-tight">
                       {activeChapter.highlight}
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-2 pt-1">
+                  <div className="grid grid-cols-2 gap-2 pt-1.5">
                     <button
                       type="button"
                       onClick={() => jumpToProgress(0.05)}
-                      className={`p-2 rounded-xl text-left border text-xs font-label-ui transition-all ${
+                      className={`p-2.5 rounded-xl text-left text-xs font-label-ui transition-all ${
                         scrollProgress < 0.25
-                          ? 'bg-[#006d3e] border-[#8af9b3] text-white font-bold shadow-sm'
-                          : 'bg-white/5 border-white/10 text-[#e2eae4] hover:bg-white/10'
+                          ? 'bg-[#006d3e] text-white font-bold shadow-sm'
+                          : 'bg-[#e2eae4] text-[#202824] hover:bg-[#dce5de]'
                       }`}
                     >
                       01. Harmony
@@ -235,10 +235,10 @@ export default function ScrollVideoSection() {
                     <button
                       type="button"
                       onClick={() => jumpToProgress(0.35)}
-                      className={`p-2 rounded-xl text-left border text-xs font-label-ui transition-all ${
+                      className={`p-2.5 rounded-xl text-left text-xs font-label-ui transition-all ${
                         scrollProgress >= 0.25 && scrollProgress < 0.55
-                          ? 'bg-[#006d3e] border-[#8af9b3] text-white font-bold shadow-sm'
-                          : 'bg-white/5 border-white/10 text-[#e2eae4] hover:bg-white/10'
+                          ? 'bg-[#006d3e] text-white font-bold shadow-sm'
+                          : 'bg-[#e2eae4] text-[#202824] hover:bg-[#dce5de]'
                       }`}
                     >
                       02. Bifacial
@@ -246,10 +246,10 @@ export default function ScrollVideoSection() {
                     <button
                       type="button"
                       onClick={() => jumpToProgress(0.65)}
-                      className={`p-2 rounded-xl text-left border text-xs font-label-ui transition-all ${
+                      className={`p-2.5 rounded-xl text-left text-xs font-label-ui transition-all ${
                         scrollProgress >= 0.55 && scrollProgress < 0.8
-                          ? 'bg-[#006d3e] border-[#8af9b3] text-white font-bold shadow-sm'
-                          : 'bg-white/5 border-white/10 text-[#e2eae4] hover:bg-white/10'
+                          ? 'bg-[#006d3e] text-white font-bold shadow-sm'
+                          : 'bg-[#e2eae4] text-[#202824] hover:bg-[#dce5de]'
                       }`}
                     >
                       03. Concealed
@@ -257,10 +257,10 @@ export default function ScrollVideoSection() {
                     <button
                       type="button"
                       onClick={() => jumpToProgress(0.95)}
-                      className={`p-2 rounded-xl text-left border text-xs font-label-ui transition-all ${
+                      className={`p-2.5 rounded-xl text-left text-xs font-label-ui transition-all ${
                         scrollProgress >= 0.8
-                          ? 'bg-[#006d3e] border-[#8af9b3] text-white font-bold shadow-sm'
-                          : 'bg-white/5 border-white/10 text-[#e2eae4] hover:bg-white/10'
+                          ? 'bg-[#006d3e] text-white font-bold shadow-sm'
+                          : 'bg-[#e2eae4] text-[#202824] hover:bg-[#dce5de]'
                       }`}
                     >
                       04. Sovereignty
@@ -268,10 +268,10 @@ export default function ScrollVideoSection() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2.5 pt-1 border-t border-white/10">
+                <div className="flex items-center gap-3 pt-1">
                   <Link
                     to="/calculator"
-                    className="flex-1 h-10 px-4 rounded-xl bg-[#006d3e] text-white font-label-ui text-xs font-semibold flex items-center justify-center gap-1.5 hover:bg-[#87f6b0] hover:text-[#007241] transition-all shadow-[0_4px_14px_rgba(54,169,107,0.35)]"
+                    className="flex-1 h-11 px-4 rounded-xl bg-[#006d3e] text-white font-label-ui text-xs font-semibold flex items-center justify-center gap-1.5 hover:bg-[#123c2d] transition-all shadow-sm"
                   >
                     <span>Calculate Savings</span>
                     <span className="material-symbols-outlined text-[16px]">
@@ -280,7 +280,7 @@ export default function ScrollVideoSection() {
                   </Link>
                   <Link
                     to="/process"
-                    className="h-10 px-4 rounded-xl bg-white/10 backdrop-blur-md text-white font-label-ui text-xs font-semibold flex items-center justify-center hover:bg-white/20 transition-all"
+                    className="h-11 px-4 rounded-xl bg-[#e2eae4] text-[#002519] font-label-ui text-xs font-semibold flex items-center justify-center hover:bg-[#dce5de] transition-all"
                   >
                     Process
                   </Link>
@@ -289,28 +289,12 @@ export default function ScrollVideoSection() {
             </div>
 
             <div className="lg:col-span-7 xl:col-span-8 order-1 lg:order-2">
-              <div className="w-full max-w-4xl mx-auto rounded-2xl bg-[#00170f] border border-white/15 shadow-2xl p-3 sm:p-5 flex flex-col gap-3 backdrop-blur-md">
-                <div className="flex items-center justify-between px-2 pt-0.5">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#8af9b3] animate-pulse" />
-                    <span className="font-label-caps text-xs text-[#8af9b3] uppercase tracking-wider font-bold">
-                      Solar Anatomy
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-1.5 text-xs text-[#ffdf97] font-label-caps uppercase font-semibold">
-                    <span className="material-symbols-outlined text-[16px]">
-                      touch_app
-                    </span>
-                    <span>Interactive Scrub</span>
-                  </div>
-                </div>
-
-                <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black border border-white/10 shadow-2xl">
+              <div className="w-full max-w-4xl mx-auto flex flex-col gap-2">
+                <div className="relative w-full aspect-video rounded-3xl overflow-hidden bg-black">
                   <canvas
                     ref={canvasRef}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/40 via-transparent to-black/20" />
                 </div>
               </div>
             </div>

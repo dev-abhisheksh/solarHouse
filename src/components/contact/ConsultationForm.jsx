@@ -45,22 +45,22 @@ export default function ConsultationForm({ defaultValues = {} }) {
   }
 
   return (
-    <div className="w-full max-w-2xl mx-auto rounded-2xl bg-white shadow-xl border border-[#E2E5DF] p-6 sm:p-8 flex flex-col gap-6">
+    <div className="w-full max-w-2xl mx-auto rounded-3xl bg-[#edf6ef] p-6 sm:p-10 flex flex-col gap-6 text-[#202824]">
       {isSubmitted ? (
-        <div className="p-8 rounded-xl bg-[#87f6b0]/30 text-[#007241] flex flex-col items-center text-center gap-3">
+        <div className="p-8 rounded-3xl bg-[#87f6b0]/50 text-[#00522d] flex flex-col items-center text-center gap-3">
           <span className="material-symbols-outlined text-[48px] text-[#006d3e]">
             check_circle
           </span>
           <h4 className="font-headline-sm text-2xl font-bold text-[#002519]">
             Consultation Booked Successfully
           </h4>
-          <p className="font-body-sm text-sm text-[#006d3e] max-w-md">
+          <p className="font-body-sm text-sm text-[#00522d] max-w-md">
             Thank you, {formData.fullName}! Our senior solar engineer has received your request and will contact you at +91 {formData.phone} within 2 hours to confirm your rooftop analysis schedule.
           </p>
           <button
             type="button"
             onClick={handleReset}
-            className="mt-3 px-6 py-2.5 bg-[#006d3e] text-white rounded-lg font-label-ui text-sm font-semibold hover:bg-[#123c2d] transition-colors"
+            className="mt-3 px-6 py-2.5 bg-[#006d3e] text-white rounded-xl font-label-ui text-sm font-semibold hover:bg-[#123c2d] transition-colors"
           >
             Submit Another Request
           </button>
@@ -82,7 +82,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
               placeholder="e.g. Vikramaditya Rao"
               value={formData.fullName}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-[#edf6ef]/50 border border-[#E2E5DF] text-[#202824] font-body-md text-sm placeholder-[#737A75]/60 focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm"
+              className="w-full h-12 px-4 rounded-2xl bg-[#e2eae4] text-[#202824] font-body-md text-sm placeholder-[#737A75]/70 focus:outline-none focus:ring-2 focus:ring-[#006d3e] focus:bg-white transition-all shadow-none"
             />
           </div>
 
@@ -94,7 +94,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
               Mobile Number (+91) *
             </label>
             <div className="flex gap-2">
-              <div className="h-12 px-3.5 rounded-xl bg-[#e7f0e9] border border-[#E2E5DF] flex items-center justify-center font-label-ui text-sm text-[#002519] font-bold shrink-0">
+              <div className="h-12 px-4 rounded-2xl bg-[#dce5de] flex items-center justify-center font-label-ui text-sm text-[#002519] font-bold shrink-0">
                 +91
               </div>
               <input
@@ -106,7 +106,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
                 placeholder="98765 43210"
                 value={formData.phone}
                 onChange={handleChange}
-                className="flex-1 h-12 px-4 rounded-xl bg-[#edf6ef]/50 border border-[#E2E5DF] text-[#202824] font-body-md text-sm placeholder-[#737A75]/60 focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm"
+                className="flex-1 h-12 px-4 rounded-2xl bg-[#e2eae4] text-[#202824] font-body-md text-sm placeholder-[#737A75]/70 focus:outline-none focus:ring-2 focus:ring-[#006d3e] focus:bg-white transition-all shadow-none"
               />
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
               placeholder="vikram@domain.com"
               value={formData.email}
               onChange={handleChange}
-              className="w-full h-12 px-4 rounded-xl bg-[#edf6ef]/50 border border-[#E2E5DF] text-[#202824] font-body-md text-sm placeholder-[#737A75]/60 focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm"
+              className="w-full h-12 px-4 rounded-2xl bg-[#e2eae4] text-[#202824] font-body-md text-sm placeholder-[#737A75]/70 focus:outline-none focus:ring-2 focus:ring-[#006d3e] focus:bg-white transition-all shadow-none"
             />
           </div>
 
@@ -146,7 +146,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
                 placeholder="e.g. Bengaluru"
                 value={formData.city}
                 onChange={handleChange}
-                className="w-full h-12 px-4 rounded-xl bg-[#edf6ef]/50 border border-[#E2E5DF] text-[#202824] font-body-md text-sm placeholder-[#737A75]/60 focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm"
+                className="w-full h-12 px-4 rounded-2xl bg-[#e2eae4] text-[#202824] font-body-md text-sm placeholder-[#737A75]/70 focus:outline-none focus:ring-2 focus:ring-[#006d3e] focus:bg-white transition-all shadow-none"
               />
             </div>
             <div className="flex flex-col gap-1.5">
@@ -165,7 +165,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
                 placeholder="560001"
                 value={formData.pincode}
                 onChange={handleChange}
-                className="w-full h-12 px-4 rounded-xl bg-[#edf6ef]/50 border border-[#E2E5DF] text-[#202824] font-body-md text-sm placeholder-[#737A75]/60 focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm"
+                className="w-full h-12 px-4 rounded-2xl bg-[#e2eae4] text-[#202824] font-body-md text-sm placeholder-[#737A75]/70 focus:outline-none focus:ring-2 focus:ring-[#006d3e] focus:bg-white transition-all shadow-none"
               />
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
                 name="propertyType"
                 value={formData.propertyType}
                 onChange={handleChange}
-                className="w-full h-12 px-4 rounded-xl bg-[#edf6ef]/50 border border-[#E2E5DF] text-[#202824] font-body-md text-sm focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm"
+                className="w-full h-12 px-4 rounded-2xl bg-[#e2eae4] text-[#202824] font-body-md text-sm focus:outline-none focus:ring-2 focus:ring-[#006d3e] focus:bg-white transition-all shadow-none"
               >
                 <option value="residential">Independent Villa / Bungalow</option>
                 <option value="commercial">Commercial Building / Office</option>
@@ -203,7 +203,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
                 name="monthlyBill"
                 value={formData.monthlyBill}
                 onChange={handleChange}
-                className="w-full h-12 px-4 rounded-xl bg-[#edf6ef]/50 border border-[#E2E5DF] text-[#202824] font-body-md text-sm focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm"
+                className="w-full h-12 px-4 rounded-2xl bg-[#e2eae4] text-[#202824] font-body-md text-sm focus:outline-none focus:ring-2 focus:ring-[#006d3e] focus:bg-white transition-all shadow-none"
               >
                 <option value="3k-7k">₹3,000 to ₹7,000 / month</option>
                 <option value="7k-15k">₹7,000 to ₹15,000 / month</option>
@@ -227,7 +227,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
               placeholder="Tell us about roof orientation, shade issues, or EV charger readiness..."
               value={formData.notes}
               onChange={handleChange}
-              className="w-full p-4 rounded-xl bg-[#edf6ef]/50 border border-[#E2E5DF] text-[#202824] font-body-md text-sm placeholder-[#737A75]/60 focus:outline-none focus:ring-2 focus:ring-[#006d3e]/40 shadow-sm resize-none"
+              className="w-full p-4 rounded-2xl bg-[#e2eae4] text-[#202824] font-body-md text-sm placeholder-[#737A75]/70 focus:outline-none focus:ring-2 focus:ring-[#006d3e] focus:bg-white transition-all shadow-none resize-none"
             />
           </div>
 
@@ -243,7 +243,7 @@ export default function ConsultationForm({ defaultValues = {} }) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full h-12 rounded-xl bg-[#006d3e] text-white font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#87f6b0] hover:text-[#007241] transition-all shadow-[0_4px_14px_rgba(54,169,107,0.35)] active:scale-95 font-semibold disabled:opacity-70"
+            className="w-full h-12 rounded-2xl bg-[#006d3e] text-white font-label-ui text-sm flex items-center justify-center gap-2 hover:bg-[#123c2d] transition-all shadow-sm active:scale-95 font-semibold disabled:opacity-70"
           >
             {isSubmitting ? (
               <span>Verifying Address...</span>
